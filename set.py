@@ -3,7 +3,6 @@ def son(num, n):
         print("SET")
     else:
         print("NOT SET")
-
 num= int(input("ENTER A NUM"))
 n = int(input("ENTER A BIT NO"))
 son(num, n)
