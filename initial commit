@@ -1,0 +1,3 @@
+string = "programming"
+substring = string[3:7]  # Extracts characters from index 3 up to (but not including) index 7
+print(substring)  # Output: "gram"
