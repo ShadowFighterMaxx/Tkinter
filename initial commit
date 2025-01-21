@@ -1,3 +1,16 @@
-string = "programming"
-substring = string[3:7]  # Extracts characters from index 3 up to (but not including) index 7
-print(substring)  # Output: "gram"
+def generate_substrings(input_string):
+    """Generates all substrings of a given string."""
+    substrings = []
+    n = len(input_string)
+    for i in range(n):  # Start index
+        for j in range(i, n):  # End index
+            substrings.append(input_string[i:j+1]) #Extract substring from i to j(inclusive)
+    return substrings
+
+# Get input from the user
+input_str = input("Enter string: ")
+
+# Generate and print the substrings
+all_substrings = generate_substrings(input_str)
+for substring in all_substrings:
+    print(substring)
